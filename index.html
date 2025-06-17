@@ -1,23 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Treino Bruto - Em Construção</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
+
 <body>
-  <div class="container">
-    <h1 class="logo">TREINO BRUTO</h1>
-    <h2 class="sub">Nosso site está ficando gigante...</h2>
-    <p>Estamos preparando algo insano para quem vive o treino de verdade!</p>
-    <a href="mailto:contato@treinobruto.com" class="btn">Avise-me no lançamento</a>
-    <div class="social">
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Instagram"></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Facebook"></a>
+  <header class="header">
+    <a href="#" class="logo logo-header">Felipe<span>Rocha</span></a>
+
+    <i id="menu-icon" class="bx bx-menu"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Início</a>
+      <a href="#education">Sobre Mim</a>
+      <a href="#services">Planos</a>
+      <a href="#projects">Serviços</a>
+      <a href="#contact">Me Contate</a>
+    </nav>
+  </header>
+  <section>
+    <div class="container">
+      <h1 class="logo logo-home">TREINO BRUTO</h1>
+      <h2 class="sub">Nosso site está ficando gigante...</h2>
+      <p>Estamos preparando algo insano para quem vive o treino de verdade!</p>
+
+      <a href="mailto:douglas.monquero@gmail.com" class="btn">Avise-me no lançamento</a>
+
+      <!-- Logo do Felipe Rocha -->
+      <div class="logo-felipe">
+        <img src="images/logo.png" alt="Logo Felipe Rocha" />
+      </div>
+
+      <!-- redes sociais se quiser manter aqui também -->
+      <div class="social">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Instagram" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Facebook" /></a>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Fale <span>Comigo</span></h2>
+
+    <form action="https://formsubmit.co/douglas.monquero@gmail.com" method="POST"
+      aria-label="Formulário de contato do site Douglas Monquero">
+      <div class="input-group">
+        <div class="input-box">
+          <label for="name" class="sr-only">Nome Completo</label>
+          <input id="name" type="text" name="name" placeholder="Nome completo" required />
+
+          <label for="email" class="sr-only">E-mail</label>
+          <input id="email" type="email" name="email" placeholder="E-mail" required />
+        </div>
+        <div class="input-box">
+          <label for="phone" class="sr-only">Telefone</label>
+          <input id="phone" type="text" name="phone" placeholder="Telefone" required />
+
+          <label for="subject" class="sr-only">Assunto</label>
+          <input id="subject" type="text" name="subject" placeholder="Assunto" required />
+        </div>
+      </div>
+
+      <div class="input-group-2">
+        <label for="message" class="sr-only">Mensagem</label>
+        <textarea id="message" name="message" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+
+        <input type="submit" value="Enviar Mensagem" class="btn" />
+
+        <!-- Campos ocultos -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://www.monquero.dev.br/obrigado.html" />
+        <input type="hidden" name="_subject" value="Nova mensagem do site!" />
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/douglas-monquero/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+      <a href="https://github.com/dmm76" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="mailto:douglas.monquero@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#contact">FAQ</a>
+      </li>
+
+      <li>
+        <a href="#services">Services</a>
+      </li>
+
+      <li>
+        <a href="#">About Me</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+    </ul>
+    <p class="copyright">© Douglas Marcelo Monquero | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
