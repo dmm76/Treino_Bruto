@@ -7,16 +7,24 @@
 :root {
   --bg-color: #0d0d0d;
   --second-bg-color: #1a1a1a;
-  --main-color: #e63946;
+  --main-color: #ff6f00;
+  --main-color-hover: #cc5a00;
+  --main-gradient: linear-gradient(90deg, #ff6f00, #ff9800);
   --text-color: #ffffff;
+  --main-font: 'Bebas Neue', cursive;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 4rem 12% 4rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(230, 57, 70, 0.08);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -24,18 +32,12 @@
   z-index: 5;
 }
 
-/*
-.logo {
-  font-size: 3rem;
-  color: var(--text-color);
-  font-weight: 800;
-  cursor: pointer;
-  transition: 0.3s ease;
-  text-decoration: none;
-}*/
-
 .logo-header {
-  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
 }
 
 .logo-home {
@@ -49,9 +51,6 @@
 
 .logo span {
   text-shadow: 0 0 25px var(--main-color);
-}
-
-.logo span {
   color: var(--main-color);
 }
 
@@ -72,20 +71,42 @@
   transform: scale(1.05);
 }
 
+.nome-completo {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.nome-completo .destaque {
+  color: var(--main-color);
+  text-shadow: 0 0 25px var(--main-color);
+}
+
+.sub-profissao {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  margin-top: 0.3rem;
+  text-decoration: none; /* remove underline se houver */
+  border: none; /* caso venha de herança */
+}
+
 .navbar a {
   font-size: 1.8rem;
   color: var(--text-color);
   margin-left: 4rem;
   font-weight: 500;
-  transition: 0.3s ease;
   border-bottom: 3px solid transparent;
   text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .navbar a:hover,
-.navbar a .active {
-  color: var(--main-color);
-  border-bottom: 3px solid var(--main-color);
+.navbar a.active {
+  color: var(--main-color);  
 }
 
 #menu-icon {
@@ -111,12 +132,6 @@
   justify-content: center;
   margin-top: 3rem;
 }
-
-span {
-  color: var(--main-color);
-}
-
-
 
 .home-content h3 {
   margin-bottom: 2rem;
@@ -153,15 +168,19 @@ span {
   max-width: 1000px;
 }
 
+span.destaque {
+  color: var(--main-color);
+  text-shadow: 0 0 25px var(--main-color);
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
   padding-top: 8rem;
 }
 
-
 body {
-  font-family: 'Bebas Neue', cursive;
+  font-family: var(--main-font);
   background-color: var(--bg-color);
   color: var(--text-color);
   min-height: 100vh;
@@ -169,16 +188,20 @@ body {
   padding: 0;
 }
 
+h1, h2, .btn {
+  font-family: var(--main-font);
+}
+
 .logo {
   font-size: 4rem;
-  color: #e63946;
+  color: var(--main-color);
   letter-spacing: 2px;
 }
 
 .sub {
   font-size: 2rem;
   margin-top: 1rem;
-  color: #f1faee;
+  color: var(--text-color);
 }
 
 p {
@@ -191,7 +214,7 @@ p {
 .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background-color: #e63946;
+  background-color: var(--main-color);
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
@@ -200,7 +223,7 @@ p {
 }
 
 .btn:hover {
-  background-color: #a4161a;
+  background-color: #cc5a00; /* tom mais escuro do laranja */
 }
 
 section {
