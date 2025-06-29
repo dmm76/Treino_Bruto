@@ -289,11 +289,19 @@ section.contact {
   font-size: 1.6rem;
   margin: 2rem 0;
 }
-
 .hero-img img {
-  width: 500px;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
   border-radius: 1rem;
   box-shadow: 0 0 30px var(--main-color);
+  object-fit: cover;
+}
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Fim Seção Inicio */
