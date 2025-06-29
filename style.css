@@ -259,12 +259,66 @@ section.contact {
   transform: scale(1.1);
 }
 
+/* Services */
+.services {
+  padding: 5rem 12%;
+  background-color: var(--second-bg-color);
+  text-align: center;
+}
+
+.services .heading {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.service-box {
+  background-color: var(--bg-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--main-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.service-box img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-box h3 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #ccc;
+}
+/* Fim Services */
+
 .contact {
   background-color: var(--bg-color);
 }
 .contact h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
   color: white;
+  font-size: 3rem;
 }
 .contact form {
   display: flex;
