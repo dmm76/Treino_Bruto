@@ -688,10 +688,18 @@ section.contact {
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+
+  section {
+    padding: 4rem 1.5rem;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 3rem 1.5rem;
     gap: 2rem;
   }
 
@@ -700,19 +708,53 @@ section.contact {
   }
 
   .hero-content h1 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     line-height: 1.3;
+    text-shadow: none;
   }
 
   .hero-content p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+  }
+
+  .hero-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-img img {
     width: 100%;
     max-width: 320px;
-    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 1rem;
   }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-text .heading,
+  .services .heading,
+  .plans .heading,
+  .contact .heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-text p,
+  .service-box p,
+  .plan-card ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .service-box img {
+    aspect-ratio: 4 / 3;
+  }
+
   .input-group {
     flex-direction: column;
     gap: 1.5rem;
@@ -735,5 +777,15 @@ section.contact {
 
   .contact form .btn {
     align-self: center;
+  }
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .footer ul li {
+    display: block;
+    margin: 0.5rem 0;
   }
 }
