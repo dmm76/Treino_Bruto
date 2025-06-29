@@ -11,7 +11,7 @@
   --main-color-hover: #cc5a00;
   --main-gradient: linear-gradient(90deg, #ff6f00, #ff9800);
   --text-color: #ffffff;
-  --main-font: 'Bebas Neue', cursive;
+  --main-font: "Bebas Neue", cursive;
 }
 
 html {
@@ -94,6 +94,10 @@ html {
   border: none; /* caso venha de herança */
 }
 
+.navbar {
+  transition: transform 0.3s ease-in-out;
+}
+
 .navbar a {
   font-size: 1.8rem;
   color: var(--text-color);
@@ -106,7 +110,7 @@ html {
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--main-color);  
+  color: var(--main-color);
 }
 
 #menu-icon {
@@ -188,7 +192,9 @@ body {
   padding: 0;
 }
 
-h1, h2, .btn {
+h1,
+h2,
+.btn {
   font-family: var(--main-font);
 }
 
@@ -282,7 +288,7 @@ section.contact {
 }
 
 .hero-content h1 span {
-  color: var(--text-color);  
+  color: var(--text-color);
 }
 
 .hero-content p {
@@ -350,7 +356,6 @@ section.contact {
 }
 
 /* Fim Seção Sobre Mim */
-
 
 /* Seção de Planos */
 .plans {
@@ -589,7 +594,6 @@ section.contact {
   border: 0;
 }
 
-
 @media (max-width: 1285px) {
   html {
     font-size: 55%;
@@ -651,6 +655,7 @@ section.contact {
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
     display: none;
+    transition: transform 0.3s ease-in-out;
   }
   .navbar.active {
     display: block;
@@ -684,14 +689,48 @@ section.contact {
   }
   .services-container {
     grid-template-columns: repeat(1, 1fr);
-  }  
+  }
 }
-
 @media (max-width: 768px) {
   html {
     font-size: 90%;
   }
 
+  /* HEADER E LOGO REDUZIDOS */
+  .header {
+    padding: 1.5rem 5%;
+  }
+
+  .nome-completo {
+    font-size: 1.8rem;
+  }
+
+  .sub-profissao {
+    font-size: 0.9rem;
+  }
+
+  #menu-icon {
+    font-size: 2.4rem;
+  }
+
+  .navbar {
+    width: 160px;
+    max-width: 80vw;
+    padding: 1.5rem 1rem;
+    right: 0;
+    border-bottom-left-radius: 1rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar a {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+  }
+
+  /* HERO SECTION */
   section {
     padding: 4rem 1.5rem;
   }
@@ -732,6 +771,7 @@ section.contact {
     border-radius: 1rem;
   }
 
+  /* SOBRE MIM */
   .about-container {
     flex-direction: column;
   }
@@ -755,6 +795,7 @@ section.contact {
     aspect-ratio: 4 / 3;
   }
 
+  /* FORMULÁRIO */
   .input-group {
     flex-direction: column;
     gap: 1.5rem;
@@ -779,13 +820,23 @@ section.contact {
     align-self: center;
   }
 
+  /* BOTÕES GERAIS */
   .btn {
     padding: 0.6rem 1.5rem;
     font-size: 1rem;
   }
 
+  /* FOOTER LINKS EM LINHA */
+  .footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
   .footer ul li {
-    display: block;
-    margin: 0.5rem 0;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0.3rem 0;
   }
 }
