@@ -641,18 +641,19 @@ section.contact {
   }
   
   .navbar {
+    display: none;
     position: absolute;
     top: 100%;
     right: 0;
     width: 200px;
     max-width: 80vw;
-    padding: 1.5rem 1rem;    
+    padding: 1.5rem 1rem;
     background-color: #143438a9;
     backdrop-filter: blur(20px);
     border-bottom-left-radius: 1rem;
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
-    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
   }
   
   .navbar.active {
