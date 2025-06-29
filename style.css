@@ -94,10 +94,6 @@ html {
   border: none; /* caso venha de herança */
 }
 
-.navbar {
-  transition: transform 0.3s ease-in-out;
-}
-
 .navbar a {
   font-size: 1.8rem;
   color: var(--text-color);
@@ -596,7 +592,7 @@ section.contact {
 
 @media (max-width: 1285px) {
   html {
-    font-size: 55%;
+    font-size: 75%;
   }
   .services-container {
     padding-bottom: 7rem;
@@ -643,20 +639,22 @@ section.contact {
   #menu-icon {
     display: block;
   }
+  
   .navbar {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 40%;
-    padding: 1rem 3%;
+    width: 200px;
+    max-width: 80vw;
+    padding: 1.5rem 1rem;    
     background-color: #143438a9;
     backdrop-filter: blur(20px);
-    border-bottom-left-radius: 2rem;
+    border-bottom-left-radius: 1rem;
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
-    display: none;
     transition: transform 0.3s ease-in-out;
   }
+  
   .navbar.active {
     display: block;
   }
@@ -718,6 +716,8 @@ section.contact {
     max-width: 80vw;
     padding: 1.5rem 1rem;
     right: 0;
+    background-color: #143438a9;
+    backdrop-filter: blur(20px);
     border-bottom-left-radius: 1rem;
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
