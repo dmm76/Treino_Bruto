@@ -258,6 +258,73 @@ section.contact {
 .social a:hover img {
   transform: scale(1.1);
 }
+/* Seção de Planos */
+.plans {
+  padding: 5rem 12%;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+
+.plans .heading {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.plan-card {
+  background-color: var(--second-bg-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid var(--main-color);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.plan-card.destaque {
+  border-color: var(--main-color-hover);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.plan-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--main-color);
+}
+
+.plan-card ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.plan-card ul li {
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.plan-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--main-color);
+}
+
+/* Fim Seção de Planos */
 
 /* Services */
 .services {
