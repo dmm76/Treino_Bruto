@@ -117,57 +117,6 @@ html {
   z-index: 10001;
 }
 
-/* .home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15rem;
-}
-
-.home-content {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  text-align: left;
-  justify-content: center;
-  margin-top: 3rem;
-}
-
-.home-content h3 {
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-  font-size: 3.5rem;
-}
-
-.home-content h1 {
-  font-size: 7rem;
-  font-weight: 700;
-  margin-top: 1.5rem;
-  line-height: 1;
-}
-.home-img {
-  border-radius: 50%;
-}
-.home-img img {
-  position: relative;
-  top: 3rem;
-  width: 28vw;
-  border-radius: 50%;
-  box-shadow: 0 0 25px var(--main-color);
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-.home-img img:hover {
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
-    0 0 100px var(--main-color);
-}
-.home-content p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.8;
-  max-width: 1000px;
-} */
-
 span.destaque {
   color: var(--main-color);
   text-shadow: 0 0 25px var(--main-color);
@@ -634,12 +583,10 @@ section.contact {
     padding: 2rem 3%;
   }
 }
-
 @media (max-width: 895px) {
   #menu-icon {
     display: block;
-  }
-  
+  }  
   .navbar {
     display: none;
     position: absolute;
@@ -654,8 +601,7 @@ section.contact {
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
     z-index: 1000;
-  }
-  
+  }  
   .navbar.active {
     display: block;
   }
@@ -694,24 +640,19 @@ section.contact {
   html {
     font-size: 90%;
   }
-
   /* HEADER E LOGO REDUZIDOS */
   .header {
     padding: 1.5rem 5%;
   }
-
   .nome-completo {
     font-size: 1.8rem;
   }
-
   .sub-profissao {
     font-size: 0.9rem;
   }
-
   #menu-icon {
     font-size: 2.4rem;
   }
-
   .navbar {
     width: 160px;
     max-width: 80vw;
@@ -724,46 +665,38 @@ section.contact {
     border-bottom: 2px solid var(--main-color);
     transition: transform 0.3s ease-in-out;
   }
-
   .navbar a {
     font-size: 1.4rem;
     margin: 2rem 0;
     text-transform: uppercase;
   }
-
   /* HERO SECTION */
   section {
     padding: 4rem 1.5rem;
   }
-
   .hero {
     flex-direction: column;
     text-align: center;
     padding: 3rem 1.5rem;
     gap: 2rem;
   }
-
   .hero-content {
     max-width: 100%;
   }
-
   .hero-content h1 {
     font-size: 2.4rem;
     line-height: 1.3;
     text-shadow: none;
   }
-
   .hero-content p {
     font-size: 1.1rem;
     margin: 1.5rem 0;
   }
-
   .hero-img {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-
   .hero-img img {
     width: 100%;
     max-width: 320px;
@@ -771,12 +704,10 @@ section.contact {
     object-fit: cover;
     border-radius: 1rem;
   }
-
   /* SOBRE MIM */
   .about-container {
     flex-direction: column;
   }
-
   .about-text .heading,
   .services .heading,
   .plans .heading,
@@ -784,49 +715,40 @@ section.contact {
     font-size: 2.2rem;
     margin-bottom: 2rem;
   }
-
   .about-text p,
   .service-box p,
   .plan-card ul li {
     font-size: 1rem;
     line-height: 1.6;
   }
-
   .service-box img {
     aspect-ratio: 4 / 3;
   }
-
   /* FORMULÁRIO */
   .input-group {
     flex-direction: column;
     gap: 1.5rem;
   }
-
   .input-box {
     width: 100%;
   }
-
   .input-group-2 {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .input-group-2 textarea {
     width: 100%;
   }
-
   .contact form .btn {
     align-self: center;
   }
-
   /* BOTÕES GERAIS */
   .btn {
     padding: 0.6rem 1.5rem;
     font-size: 1rem;
   }
-
   /* FOOTER LINKS EM LINHA */
   .footer ul {
     display: flex;
@@ -834,7 +756,6 @@ section.contact {
     justify-content: center;
     gap: 0.5rem;
   }
-
   .footer ul li {
     display: inline-block;
     padding: 0 10px;
