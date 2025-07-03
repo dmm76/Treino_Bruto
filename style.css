@@ -19,16 +19,16 @@ html {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 4rem 12% 4rem;
+  padding: 3rem 12% 3rem;
   background-color: rgba(230, 57, 70, 0.08);
-  backdrop-filter: blur(10px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  backdrop-filter: blur(10px);  
   z-index: 5;
 }
 
@@ -135,6 +135,7 @@ body {
   min-height: 100vh;
   text-align: center;
   padding: 0;
+  padding-top: 8rem;
 }
 
 h1,
@@ -181,12 +182,12 @@ section {
   scroll-margin-top: 9rem;
 }
 
-section:first-of-type {
-  padding: 5rem 12% 4rem;
-  min-height: 100vh;
+section:hero {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5rem 12% 4rem;
+  min-height: 100vh;
 }
 
 /* Ajuste a seção de contato */
@@ -209,6 +210,7 @@ section.contact {
 .social a:hover img {
   transform: scale(1.1);
 }
+
 /* Seção Hero - Inicio */
 .hero {
   display: flex;
@@ -218,7 +220,7 @@ section.contact {
   gap: 5rem;
   background: linear-gradient(90deg, #0d0d0d 60%, #1a1a1a);
   color: var(--text-color);
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .hero-content {
@@ -260,7 +262,7 @@ section.contact {
 /* Seção Sobre Mim */
 .about {
   padding: 5rem 12%;
-  background-color: var(--second-bg-color);
+  /* background-color: var(--second-bg-color); */
   color: var(--text-color);
 }
 
@@ -295,7 +297,7 @@ section.contact {
 }
 
 .about-img img {
-  max-width: 100%;
+  max-width: 80%;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(255, 111, 0, 0.3);
 }
@@ -373,7 +375,7 @@ section.contact {
 /* Services */
 .services {
   padding: 5rem 12%;
-  background-color: var(--second-bg-color);
+  /* background-color: var(--second-bg-color); */
   text-align: center;
 }
 
@@ -465,7 +467,7 @@ section.contact {
   position: relative;
   bottom: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   background-color: var(--second-bg-color);
 }
 .footer .social {
@@ -513,7 +515,7 @@ section.contact {
   padding: 0 15px;
 }
 .footer .copyright {
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
   font-size: 16px;
   color: white;
@@ -586,7 +588,7 @@ section.contact {
 @media (max-width: 895px) {
   #menu-icon {
     display: block;
-  }  
+  }
   .navbar {
     display: none;
     position: absolute;
@@ -601,7 +603,7 @@ section.contact {
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
     z-index: 1000;
-  }  
+  }
   .navbar.active {
     display: block;
   }

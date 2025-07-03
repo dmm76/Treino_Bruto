@@ -14,6 +14,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -28,11 +29,11 @@
       <i id="menu-icon" class="bx bx-menu"></i>
 
       <nav class="navbar">
-        <a href="#hero" class="active">Início</a>
-        <a href="#aboutme">Sobre Mim</a>
-        <a href="#plans">Planos</a>
-        <a href="#services">Serviços</a>
-        <a href="#contact">Me Contate</a>
+        <a href="index.html" class="active">Início</a>
+        <a href="sobre.html">Sobre Mim</a>
+        <a href="planos.html">Planos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Me Contate</a>
       </nav>
     </header>
 
@@ -60,178 +61,7 @@
         </picture>
       </div>
     </section>
-
-    <!-- Seção Sobre Mim-->
-    <section id="aboutme" class="about">
-      <div class="about-container">
-        <div class="about-text">
-          <h2 class="heading">Sobre <span>Mim</span></h2>
-          <p>
-            Meu nome é Felipe Rocha, sou Personal Trainer especializado em
-            performance, emagrecimento e reeducação postural. Tenho anos de
-            experiência ajudando pessoas a conquistarem uma vida mais saudável
-            através de treinos inteligentes e acompanhamento de qualidade.
-          </p>
-          <p>
-            Acredito que cada corpo é único, por isso desenvolvo treinos e
-            orientações nutricionais personalizados. Se você busca transformar
-            sua saúde de forma consistente e segura, está no lugar certo!
-          </p>
-          <a href="#plans" class="btn">Conheça meus Planos</a>
-        </div>
-        <div class="about-img">
-          <picture>
-            <source srcset="images/felipe-rocha.webp" type="image/webp" />
-            <img
-              src="images/felipe-rocha.jpg"
-              alt="Felipe Rocha Personal Trainer"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção de Planos -->
-    <section id="plans" class="plans">
-      <h2 class="heading">Nossos <span>Planos</span></h2>
-
-      <div class="plans-container">
-        <div class="plan-card">
-          <h3>Plano Nutricional</h3>
-          <ul>
-            <li>✓ Acompanhamento semanal</li>
-            <li>✓ Cardápio personalizado</li>
-            <li>✓ Avaliação metabólica</li>
-            <li>✓ Suporte por WhatsApp</li>
-          </ul>
-          <a href="#contact" class="btn">Assinar Agora</a>
-        </div>
-
-        <div class="plan-card destaque">
-          <h3>Plano de Treinos</h3>
-          <ul>
-            <li>✓ Treino funcional + musculação</li>
-            <li>✓ Correção de postura</li>
-            <li>✓ Exercícios respiratórios</li>
-            <li>✓ Vídeos demonstrativos</li>
-          </ul>
-          <a href="#contact" class="btn">Assinar Agora</a>
-        </div>
-
-        <div class="plan-card">
-          <h3>Plano Completo</h3>
-          <ul>
-            <li>✓ Nutrição + Treino + Acompanhamento</li>
-            <li>✓ Suporte full time</li>
-            <li>✓ Feedbacks mensais</li>
-            <li>✓ Resultados garantidos</li>
-          </ul>
-          <a href="#contact" class="btn">Assinar Agora</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção de Serviços -->
-    <section id="services" class="services">
-      <h2 class="heading">Nossos <span>Serviços</span></h2>
-
-      <div class="services-container">
-        <div class="service-box">
-          <img src="images/treino.webp" alt="Treino Personalizado" loading="lazy"/>
-          <h3>Treinos Personalizados</h3>
-          <p>
-            Planos de treino exclusivos, adaptados ao seu nível e objetivos.
-          </p>
-        </div>
-
-        <div class="service-box">
-          <img src="images/nutricional.webp" alt="Consultoria Nutricional" loading="lazy" />
-          <h3>Consultoria Nutricional</h3>
-          <p>Acompanhamento para uma alimentação equilibrada e eficaz.</p>
-        </div>
-
-        <div class="service-box">
-          <img src="images/app.webp" alt="Aplicativo" loading="lazy"/>
-          <h3>App Exclusivo</h3>
-          <p>Gerencie treinos e progresso com nosso app próprio.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Fale <span>Comigo</span></h2>
-
-      <form
-        action="https://formsubmit.co/douglas.monquero@gmail.com"
-        method="POST"
-        aria-label="Formulário de contato do site Douglas Monquero"
-      >
-        <div class="input-group">
-          <div class="input-box">
-            <label for="name" class="sr-only">Nome Completo</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Nome completo"
-              required
-            />
-
-            <label for="email" class="sr-only">E-mail</label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              required
-            />
-          </div>
-          <div class="input-box">
-            <label for="phone" class="sr-only">Telefone</label>
-            <input
-              id="phone"
-              type="text"
-              name="phone"
-              placeholder="Telefone"
-              required
-            />
-
-            <label for="subject" class="sr-only">Assunto</label>
-            <input
-              id="subject"
-              type="text"
-              name="subject"
-              placeholder="Assunto"
-              required
-            />
-          </div>
-        </div>
-
-        <div class="input-group-2">
-          <label for="message" class="sr-only">Mensagem</label>
-          <textarea
-            id="message"
-            name="message"
-            cols="30"
-            rows="10"
-            placeholder="Sua mensagem"
-            required
-          ></textarea>
-
-          <input type="submit" value="Enviar Mensagem" class="btn" />
-
-          <!-- Campos ocultos -->
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://www.treinobruto.com.br/obrigado.html"
-          />
-          <input type="hidden" name="_subject" value="Nova mensagem do site!" />
-        </div>
-      </form>
-    </section>
+    
 
     <footer class="footer">
       <div class="social">
@@ -248,25 +78,23 @@
 
       <ul class="list">
         <li>
-          <a href="#hero">Inicio</a>
+          <a href="index.html">Inicio</a>
         </li>
 
         <li>
-          <a href="#services">Serviços</a>
+          <a href="servicos.html">Serviços</a>
         </li>
 
         <li>
-          <a href="#aboutme">Sobre Mim</a>
+          <a href="sobre.html">Sobre Mim</a>
         </li>
 
         <li>
-          <a href="#contact">Contato</a>
+          <a href="contato.html">Contato</a>
         </li>
         
       </ul>
       <p class="copyright">© Douglas Marcelo Monquero | All Rights Reserved</p>
-    </footer>
-
-    <script src="script.js"></script>
+    </footer>    
   </body>
 </html>
