@@ -114,10 +114,11 @@ html {
 
 #menu-icon {
   display: none;
-  font-size: 3.6rem;
-  color: var(--text-color);
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   z-index: 10001;
+  filter: brightness(0) invert(1); /* Para ficar branco em fundo escuro */
 }
 
 span.destaque {
