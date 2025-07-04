@@ -13,8 +13,8 @@
 ## 📸 Capturas de Tela
 
 ### 💻 Versão Desktop
-|![alt text](image-1.png)|
-|------------------------|--------------------------|
+![alt text](image-1.png)
+
 | Tela Versão Desktop    |
 
 ### 📱 Versão Mobile
@@ -22,9 +22,10 @@
 |------------------------|--------------------------|
 | Tela inicial mobile    | Menu hambúrguer aberto   |
 
+<p align="center">
 ### ✉️ Formulário Validando
-|![alt text](image-2.png)|
-|------------------------|--------------------------|
+<img src="![alt text](image-2.png)"alt="Formulário de Contato" width="600">
+<p align="center"><em>Formulário de Contato com validação</em></p>
 | Formulário de Contato  |
 
 ---
