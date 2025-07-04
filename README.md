@@ -13,7 +13,7 @@
 ## 📸 Capturas de Tela
 
 ### 💻 Versão Desktop
-![alt text](image-1.png)
+|![alt text](image-1.png)|
 |------------------------|--------------------------|
 | Tela Versão Desktop    |
 
@@ -23,7 +23,7 @@
 | Tela inicial mobile    | Menu hambúrguer aberto   |
 
 ### ✉️ Formulário Validando
-![alt text](image-2.png)
+|![alt text](image-2.png)|
 |------------------------|--------------------------|
 | Formulário de Contato  |
 
