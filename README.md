@@ -24,7 +24,7 @@
 
 <p align="center">
 ### ✉️ Formulário Validando
-<img src="![alt text](image-2.png)"alt="Formulário de Contato" width="600">
+![alt text](image-2.png)
 <p align="center"><em>Formulário de Contato com validação</em></p>
 | Formulário de Contato  |
 
