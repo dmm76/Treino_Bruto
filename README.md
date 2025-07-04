@@ -14,6 +14,8 @@
 
 ### 💻 Versão Desktop
 ![alt text](image-1.png)
+|------------------------|--------------------------|
+| Tela Versão Desktop    |
 
 ### 📱 Versão Mobile
 |![alt text](image.png)  | ![alt text](image-3.png) |
@@ -22,7 +24,8 @@
 
 ### ✉️ Formulário Validando
 ![alt text](image-2.png)
-
+|------------------------|--------------------------|
+| Formulário de Contato  |
 
 ---
 
