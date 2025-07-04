@@ -16,9 +16,8 @@
 ![alt text](image-1.png)
 
 ### 📱 Versão Mobile
-![alt text](image.png)   ![alt text](image-3.png)
-|-------------------------|---------------------------|
-| Menu Mobile 01          | Menu Mobile 02            |
+|![alt text](image.png) | ![alt text](image-3.png)|
+
 
 ### ✉️ Formulário Validando
 ![alt text](image-2.png)
