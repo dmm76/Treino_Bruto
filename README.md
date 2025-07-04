@@ -12,13 +12,22 @@
 
 ## 📸 Capturas de Tela
 
-> Adicione aqui prints do site em desktop e mobile.
+### 💻 Versão Desktop
+![alt text](image-1.png)
+
+### 📱 Versão Mobile
+![alt text](image.png)
+
+### ✉️ Formulário Validando
+![alt text](image-2.png)
 
 ---
 
 ## 📚 Relatório Técnico
 
-Um relatório detalhado com escolhas de design, arquitetura e justificativas técnicas pode ser acessado neste repositório: [`Relatorio_Treino_Bruto.pdf`](Relatorio_Treino_Bruto.pdf)
+Um relatório detalhado com escolhas de design, arquitetura e justificativas técnicas pode ser acessado neste repositório:<br>
+ 📄 [Acesse o Relatório Técnico (PDF)](./documento/Relatorio_Treino_Bruto.pdf)
+
 
 ---
 
@@ -26,7 +35,7 @@ Um relatório detalhado com escolhas de design, arquitetura e justificativas té
 
 Douglas Marcelo Monquero  
 📧 [Contato via GitHub](https://github.com/dmm76)  
-🎓 Senac Paraná – Curso Programador Web
+🎓 Unicesumar Maringá Paraná – Bacharelado em Engenharia de Software - Disciplina de FrontEnd
 
 ---
 
