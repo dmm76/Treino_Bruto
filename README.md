@@ -22,10 +22,9 @@
 |------------------------|--------------------------|
 | Tela inicial mobile    | Menu hambúrguer aberto   |
 
-<p align="center">
 ### ✉️ Formulário Validando
 ![alt text](image-2.png)
-<p align="center"><em>Formulário de Contato com validação</em></p>
+
 | Formulário de Contato  |
 
 ---
