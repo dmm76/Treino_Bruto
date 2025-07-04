@@ -84,6 +84,9 @@ html {
 }
 
 .sub-profissao {
+  /* amarelo ouro – contraste mais alto */
+  color: #FFD700; 
+  font-weight: bold;
   font-size: 1.2rem;
   color: var(--text-color);
   opacity: 0.8;
@@ -166,10 +169,11 @@ p {
 .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background-color: var(--main-color);
-  color: white;
+  background-color: #b15d0f;
+  color: #fff; 
   text-decoration: none;
   font-size: 1.2rem;
+  border: 2px solid #fff; 
   border-radius: 8px;
   transition: 0.3s ease;
 }
@@ -197,12 +201,16 @@ section.contact {
 }
 
 .social {
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+.social a i {
+  color: #84DCC6; /* ou a cor que você quer para todos os ícones */ 
 }
 
 .social a img {
-  width: 32px;
-  margin: 0 10px;
+  width: 25px;
+  margin: 0;
   filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
 }
