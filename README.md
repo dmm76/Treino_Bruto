@@ -13,17 +13,17 @@
 ## 📸 Capturas de Tela
 
 ### 💻 Versão Desktop
-![alt text](image-1.png)
+![alt text](./images/readme/image-1.png)
 
 | Tela Versão Desktop    |
 
 ### 📱 Versão Mobile
-|![alt text](image.png)  | ![alt text](image-3.png) |
+|![alt text](./images/readme/image.png)  | ![alt text](./images/readme/image-3.png) |
 |------------------------|--------------------------|
 | Tela inicial mobile    | Menu hambúrguer aberto   |
 
 ### ✉️ Formulário Validando
-![alt text](image-2.png)
+![alt text](./images/readme/image-2.png)
 
 | Formulário de Contato  |
 
