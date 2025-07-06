@@ -28,7 +28,7 @@ html {
   width: 100%;
   padding: 3rem 12% 3rem;
   background-color: rgba(230, 57, 70, 0.08);
-  backdrop-filter: blur(10px);  
+  backdrop-filter: blur(10px);
   z-index: 5;
 }
 
@@ -85,7 +85,7 @@ html {
 
 .sub-profissao {
   /* amarelo ouro – contraste mais alto */
-  color: #FFD700; 
+  color: #ffd700;
   font-weight: bold;
   font-size: 1.2rem;
   color: var(--text-color);
@@ -97,7 +97,14 @@ html {
   border: none; /* caso venha de herança */
 }
 
-.navbar a {
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li a {
   font-size: 1.8rem;
   color: var(--text-color);
   margin-left: 4rem;
@@ -171,10 +178,10 @@ p {
   display: inline-block;
   padding: 0.8rem 2rem;
   background-color: #b15d0f;
-  color: #fff; 
+  color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
-  border: 2px solid #fff; 
+  border: 2px solid #fff;
   border-radius: 8px;
   transition: 0.3s ease;
 }
@@ -206,7 +213,7 @@ section.contact {
 }
 
 .social a i {
-  color: #84DCC6; /* ou a cor que você quer para todos os ícones */ 
+  color: #84dcc6; /* ou a cor que você quer para todos os ícones */
 }
 
 .social a img {
@@ -616,10 +623,15 @@ section.contact {
   .navbar.active {
     display: block;
   }
-  .navbar a {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul li a {
     display: block;
     font-size: 2rem;
-    margin: 3rem 0;
+    margin: 1rem 0;
     color: white;
   }
   .home {
@@ -676,9 +688,16 @@ section.contact {
     border-bottom: 2px solid var(--main-color);
     transition: transform 0.3s ease-in-out;
   }
-  .navbar a {
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li a {
     font-size: 1.4rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
     text-transform: uppercase;
   }
   /* HERO SECTION */
