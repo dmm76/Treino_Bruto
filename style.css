@@ -149,12 +149,15 @@ body {
   padding-top: 8rem;
 }
 
-h1,
-h2,
-.btn {
-  font-family: var(--main-font);
+h1{
   margin-block: 0.67em;
   font-size: 2em;
+  font-family: var(--main-font);  
+}
+
+h2,
+.btn {
+  font-family: var(--main-font);  
 }
 
 .logo {
