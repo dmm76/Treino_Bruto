@@ -149,12 +149,14 @@ body {
   padding-top: 8rem;
 }
 
-h1{
-  margin-block: 0.67em;
-  font-size: 2em;
-  font-family: var(--main-font);  
+section h1,
+article h1,
+nav h1,
+aside h1 {
+  font-size: 2rem;
 }
 
+h1,
 h2,
 .btn {
   font-family: var(--main-font);  
