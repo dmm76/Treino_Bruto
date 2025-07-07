@@ -9,12 +9,22 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Fonte otimizada -->
     <link
-      rel="stylesheet"
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      />
+    </noscript>
+
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Treino Bruto - Em Construção</title>
   </head>
@@ -36,7 +46,7 @@
         height="25"
       />
       <nav class="navbar" aria-label="Navegação principal">
-         <h2 class="sr-only">Menu principal</h2>
+        <h2 class="sr-only">Menu principal</h2>
         <ul>
           <li><a href="index.html" class="active">Início</a></li>
           <li><a href="sobre.html">Sobre Mim</a></li>
@@ -50,7 +60,7 @@
       <!-- Secão Hero -->
       <section id="hero" class="hero">
         <div class="hero-content">
-          <h1 style="font-size: 4rem;">
+          <h1 style="font-size: 4rem">
             <span>Treino Bruto</span><br />
             Resultados Reais
           </h1>
